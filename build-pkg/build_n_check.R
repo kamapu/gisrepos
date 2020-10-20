@@ -1,20 +1,16 @@
-# TODO:   Working script for testing the package 'taxlist'
+# TODO:   Working script for testing the package 'gisrepos'
 # 
 # Author: Miguel Alvarez
 ################################################################################
 
-# See at
-## browseURL(paste0("https://www.marinedatascience.co/blog/2020/01/09/",
-##                 "checklist-for-r-package-re-submissions-on-cran/"))
-
 # Needed packages
 library(devtools)
-library(covr)
-library(goodpractice)
-library(rmarkdown)
-library(knitr)
-library(pkgdown)
-library(codemetar)
+## library(covr)
+## library(goodpractice)
+## library(rmarkdown)
+## library(knitr)
+## library(pkgdown)
+## library(codemetar)
 
 # Document package
 document()

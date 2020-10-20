@@ -1,5 +1,5 @@
 Package: gisrepos
-Version: 0.1.0.9003
+Version: 0.1.0.9004
 Encoding: UTF-8
 Title: Repositories of Spatial Data Sets for Environmental Sciences
 Authors@R: c(
@@ -15,6 +15,9 @@ Depends:
 Imports:
     ODB,
     rmarkdown,
+    RPostgres,
+    RPostgreSQL,
+    tcltk,
     utils,
     readODS
 Suggests:
