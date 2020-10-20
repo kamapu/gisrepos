@@ -69,7 +69,7 @@ connect_db <- function(dbname="", host="localhost", port="5432", user="",
 	tkwait.window(tt)
 	# Alternative connections
 	if(!package[1] %in% c("RPostgres", "RPostgreSQL"))
-		stop(paste0("The value '", package, "' in argument 'package'",
+		stop(paste0("The value '", package[1], "' in argument 'package'",
 						" is not valid"))
 	if(package[1] == "RPostgres") {
 		invisible(dbConnect(RPostgres::Postgres(),
