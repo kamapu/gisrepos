@@ -2,6 +2,7 @@
 % Please edit documentation in R/connect_db.R
 \name{connect_db}
 \alias{connect_db}
+\alias{connect_db2}
 \title{Connect to PostgreSQL database}
 \usage{
 connect_db(
@@ -10,7 +11,15 @@ connect_db(
   port = "5432",
   user = "",
   password = "",
-  package = c("RPostgres", "RPostgreSQL"),
+  ...
+)
+
+connect_db2(
+  dbname = "",
+  host = "localhost",
+  port = "5432",
+  user = "",
+  password = "",
   ...
 )
 }
@@ -18,15 +27,12 @@ connect_db(
 \item{dbname, host, port, user, password}{Each a character value passed to
 \code{\link[DBI:dbConnect]{DBI::dbConnect()}}. They can also be modified in the prompt.}
 
-\item{package}{A character value indicating the name of the package to be
-used for connecting the database (either "RPostgres" or "RPostgreSQL").}
-
 \item{...}{Further arguments passed to \code{\link[DBI:dbConnect]{DBI::dbConnect()}}.}
 }
 \description{
 This function opens a prompt to insert connection details to a PostgreSQL
-database. Alternatively the package \code{RPostgres} or \code{RPostgreSQL} can be used
-(see argument \code{package}).
+database. Alternatively the package \code{RPostgres} (\code{connect_db()}) or
+\code{RPostgreSQL} (\code{connect_db2()}) can be used.
 }
 \references{
 \preformatted{http://r.789695.n4.nabble.com/tkentry-that-exits-after-RETURN-tt854721.html#none
