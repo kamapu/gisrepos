@@ -72,7 +72,7 @@ connect_db <- function(dbname="", host="localhost", port="5432", user="",
 		stop(paste0("The value '", package, "' in argument 'package'",
 						" is not valid"))
 	if(package[1] == "RPostgres") {
-		invisible(RPostgres::dbConnect(RPostgres::Postgres(),
+		invisible(dbConnect(RPostgres::Postgres(),
 						dbname=tclvalue(DB),
 						host=tclvalue(Host),
 						port=tclvalue(Port),
@@ -81,7 +81,7 @@ connect_db <- function(dbname="", host="localhost", port="5432", user="",
 						...))
 	}
 	if(package[1] == "RPostgreSQL") {
-		invisible(RPostgreSQL::dbConnect("PostgreSQL",
+		invisible(dbConnect("PostgreSQL",
 						dbname=tclvalue(DB),
 						host=tclvalue(Host),
 						port=tclvalue(Port),
