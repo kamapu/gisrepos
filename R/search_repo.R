@@ -21,11 +21,11 @@
 #' Either a html file (`output="html"`) or a list (`output="list"`) with
 #' selected data sets.
 #' 
-#' @examples 
-#' ## Write a html
-#' search_repo("temp")
-#' ## Get a list
-#' temp_repos <- search_repo("temp", output="list")
+## #' @examples 
+## #' ## Write a html
+## #' search_repo("temp")
+## #' ## Get a list
+## #' temp_repos <- search_repo("temp", output="list")
 #' 
 #' @export search_repo
 #' 

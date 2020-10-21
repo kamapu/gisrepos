@@ -15,7 +15,7 @@
 #' @return A list including the subset of 'db'.
 #' 
 #' @examples 
-#' first_repos <- subset_db(.gisrepos, 1:5)
+## #' first_repos <- subset_db(.gisrepos, 1:5)
 #' 
 #' @export subset_db
 #' 

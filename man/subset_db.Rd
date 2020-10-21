@@ -22,6 +22,5 @@ Produces a subset considering all relationships between data frames included
 in a list structured as in \link{.gisrepos}.
 }
 \examples{
-first_repos <- subset_db(.gisrepos, 1:5)
 
 }

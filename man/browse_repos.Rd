@@ -15,7 +15,3 @@ browse_repos(db, idx)
 All links contained in a list with the structure of \link{.gisrepos} will be
 opened in the default browser.
 }
-\examples{
-browse_repos(.gisrepos, 1:2)
-
-}

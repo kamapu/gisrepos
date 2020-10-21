@@ -9,8 +9,8 @@
 #' @param db A list with the same structure as [.gisrepos].
 #' @param idx An index (optional) passed to [subset_db()].
 #' 
-#' @examples 
-#' browse_repos(.gisrepos, 1:2)
+## #' @examples 
+## #' browse_repos(.gisrepos, 1:2)
 #' 
 #' @export browse_repos
 #' 

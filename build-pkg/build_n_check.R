@@ -3,8 +3,29 @@
 # Author: Miguel Alvarez
 ################################################################################
 
+# required_packages
+gisrepos::require_now(c("devtools"), update=TRUE, dependencies=TRUE)
+
+# document package
+document()
+
+# write data set
+source("data-raw/01_update_gisrepos.R")
+
+# Build package
+pkg_loc <- build(path="build-pkg")
+
+# Test the package
+## Sys.setenv(LANG="en_US.iso88591")
+Sys.setlocale("LC_ALL", "en_US.iso88591")
+Sys.setenv('_R_CHECK_SYSTEM_CLOCK_' = 0)
+check_built(path=pkg_loc)
+
+
+## GARBAGE ---------------------------------------------------------------------
+
 # Needed packages
-library(devtools)
+## library(devtools)
 ## library(covr)
 ## library(goodpractice)
 ## library(rmarkdown)
@@ -13,7 +34,7 @@ library(devtools)
 ## library(codemetar)
 
 # Document package
-document()
+## document()
 
 # Report coverage
 ## report()
@@ -33,27 +54,27 @@ document()
 # Codemetar
 # write_codemeta()
 
-# Build package
-pkg_loc <- build(path="build-pkg")
-
-# Test the package
-## Sys.setenv(LANG="en_US.iso88591")
-Sys.setlocale("LC_ALL", "en_US.iso88591")
-Sys.setenv('_R_CHECK_SYSTEM_CLOCK_' = 0)
-check_built(path=pkg_loc)
-
-# After check ------------------------------------------------------------------
-
-# Install the package
-## install()
-
-# Render readme-file.
-render("README.Rmd")
-
-# Check on Win-builder
-browseURL("https://win-builder.r-project.org/")
-
-# submit to CRAN
+## # Build package
+## pkg_loc <- build(path="build-pkg")
+## 
+## # Test the package
+## ## Sys.setenv(LANG="en_US.iso88591")
+## Sys.setlocale("LC_ALL", "en_US.iso88591")
+## Sys.setenv('_R_CHECK_SYSTEM_CLOCK_' = 0)
+## check_built(path=pkg_loc)
+## 
+## # After check ------------------------------------------------------------------
+## 
+## # Install the package
+## ## install()
+## 
+## # Render readme-file.
+## render("README.Rmd")
+## 
+## # Check on Win-builder
+## browseURL("https://win-builder.r-project.org/")
+## 
+## # submit to CRAN
 
 
 # Render package-site

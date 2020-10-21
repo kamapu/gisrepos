@@ -38,10 +38,3 @@ selected data sets.
 This function retrieves a display of data sets matching a 'topic' by using
 \code{\link[=grepl]{grepl()}} with option \code{ignore.case=FALSE}.
 }
-\examples{
-## Write a html
-search_repo("temp")
-## Get a list
-temp_repos <- search_repo("temp", output="list")
-
-}
