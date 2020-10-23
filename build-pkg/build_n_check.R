@@ -9,8 +9,8 @@ gisrepos::require_now(c("devtools"), update=TRUE, dependencies=TRUE)
 # document package
 document()
 
-# write data set
-source("data-raw/01_update_gisrepos.R")
+## # write data set
+## source("data-raw/01_write_data_sets.R")
 
 # Build package
 pkg_loc <- build(path="build-pkg")
