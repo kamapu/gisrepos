@@ -12,9 +12,9 @@ Data <- gisrepos:::read_template("data-raw/gisrepos.ods") # Set next after insta
 Data <- gisrepos:::df2data(Data)
 ## Data <- gisrepos:::df2data(Data)
 
-.gisrepos <- Data
+gisrepos_list <- Data
 
 # Into new class
 ## source("R/gisrepos-class.R")
 
-save(.gisrepos, file="data/gisrepos.rda")
+save(gisrepos_list, file="data-raw/gisrepos_list.rda")
