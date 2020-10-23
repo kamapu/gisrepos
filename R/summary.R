@@ -44,6 +44,18 @@ setMethod("summary", signature(object="gisrepos"),
 		}
 )
 
+#' @rdname summary
+#' 
+#' @aliases show,gisrepos-method
+#' 
+#' @exportMethod show
+#' 
+setMethod("show", signature(object="gisrepos"),
+		function(object) {
+			summary(object)
+		}
+)
+
 #' @exportMethod print
 #' 
 if(!isGeneric("print"))
@@ -58,7 +70,7 @@ if(!isGeneric("print"))
 #' 
 setMethod("print", signature(x="gisrepos"),
 		function(x, ...) {
-			summary(object=x, ...)
+			summary(x, ...)
 		}
 )
 

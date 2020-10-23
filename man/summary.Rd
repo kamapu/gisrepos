@@ -3,10 +3,13 @@
 \name{summary}
 \alias{summary}
 \alias{summary,gisrepos-method}
+\alias{show,gisrepos-method}
 \alias{print,gisrepos-method}
 \title{Summary of gisrepos object}
 \usage{
 \S4method{summary}{gisrepos}(object, ...)
+
+\S4method{show}{gisrepos}(object)
 
 \S4method{print}{gisrepos}(x, ...)
 }

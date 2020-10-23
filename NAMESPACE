@@ -3,6 +3,7 @@
 export(require_now)
 exportClasses(gisrepos)
 exportMethods(print)
+exportMethods(show)
 exportMethods(summary)
 importFrom(methods,new)
 importFrom(methods,show)
