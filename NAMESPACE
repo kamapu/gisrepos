@@ -2,6 +2,7 @@
 
 export(require_now)
 exportClasses(gisrepos)
+exportMethods(gr2list)
 exportMethods(print)
 exportMethods(show)
 exportMethods(summary)

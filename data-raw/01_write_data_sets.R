@@ -24,9 +24,3 @@ gisrepos_list$data_sets$timestamp <- Sys.Date()
 
 # write object
 save(.gisrepos, file="data/gisrepos.rda")
-
-
-# Test
-remotes::install_github("kamapu/gisrepos")
-library(gisrepos)
-summary(.gisrepos)
