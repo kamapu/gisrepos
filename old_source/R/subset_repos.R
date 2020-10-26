@@ -1,4 +1,4 @@
-#' @name subset_db
+#' @name subset_repos
 #' 
 #' @title Produce a subset of repository list
 #' 
