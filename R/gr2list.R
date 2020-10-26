@@ -44,7 +44,7 @@ setMethod("gr2list", signature(gr="gisrepos"),
 						description=temp$description,
 						timestamp=temp$timestamp,
 						links=fk_links$url[fk_links$id == i],
-						keywords=fk_keywords$url[fk_keywords$id == i]
+						keywords=fk_keywords$kword[fk_keywords$id == i]
 						)
 			}
 			# Defined as S3 class

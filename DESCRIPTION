@@ -25,6 +25,7 @@ Imports:
 Suggests:
     devtools,
     roxygen2
+Remotes: kamapu/yamlme
 LazyData: true
 Description: A collection of On-Line repositories for GIS data sets.
 License: GPL (>= 2)
