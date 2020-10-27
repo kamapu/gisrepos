@@ -22,5 +22,11 @@ gisrepos_list$data_sets$timestamp <- Sys.Date()
 						fk_links=fk_links,
 						fk_keywords=fk_keywords)))
 
+# In case of duplicated names
+.gisrepos@tables$data_sets$name[duplicated(.gisrepos@tables$data_sets$name)] <-
+		with(.gisrepos@tables, {
+					paste(data_sets$name[duplicated(data_sets$name)], "(dupl)")
+		})
+
 # write object
 save(.gisrepos, file="data/gisrepos.rda")
